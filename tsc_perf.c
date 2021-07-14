@@ -16,6 +16,6 @@ int main() {
     }
     long long end = tsc_nsec();
 
-    printf("tsc_nsec: %.2f ns/op\n", ((double) end-start) / (double) n);
+    printf("tsc_nsec: %.2f ns/op after %ld loops\n", ((double) end-start) / (double) n, n);
     return 0;
 }
