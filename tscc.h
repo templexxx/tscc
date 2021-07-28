@@ -2,6 +2,7 @@
 // Created by templex on 7/9/21.
 //
 #include "time.h"
+#include "stdint.h"
 #include "stdlib.h"
 
 #ifndef TSC_FREQ

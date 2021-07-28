@@ -6,7 +6,7 @@ build() {
 
   if [ -z "$freq" ]; then
     enabled=0
-    gcc -O3 -o test tscc_test.c
+    gcc -O3 -o tsc_perf tsc_perf.c
   else
     gcc -O3 -DTSC_FREQ="$(echo $freq)" -DTSC_ENABLED="$(echo $enabled)" -o tsc_perf tsc_perf.c
   fi
